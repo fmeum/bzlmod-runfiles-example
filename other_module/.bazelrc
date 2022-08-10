@@ -1,0 +1,4 @@
+build --experimental_enable_bzlmod
+# Strict deps currently doesn't seem to work with Bzlmod, see
+# https://buildkite.com/bazel/bcr-presubmit/builds/383#01821c77-7470-4fb4-bfa1-22b6e40f8374/247-272
+build --experimental_strict_java_deps=off

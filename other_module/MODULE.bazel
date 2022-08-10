@@ -1,0 +1,10 @@
+module(
+   name = "other_module",
+   version = "3.4.5",
+)
+bazel_dep(name = "my_module", version = "1.2.3")
+local_path_override(
+   module_name = "my_module",
+   path = "..",
+)
+
